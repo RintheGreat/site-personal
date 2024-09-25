@@ -1,0 +1,101 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Hero section*/
+.container-hero {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    position: relative;
+}
+
+.container-hero .text {
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    color: aliceblue;
+}
+
+.container-hero h1 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.container-hero p {
+    font-size: 2rem;
+}
+
+/*Resume section*/
+.container-resume {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-resume h2 {
+    text-align: center;
+}
+
+.competencies {
+    flex-basis: 720px;
+}
+
+.latest-work {
+    flex-basis: auto;
+}
+
+.latest-work .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container-resume li {
+    font-size: x-large;
+    padding: 10px;
+}
+.container-resume .bold {
+    font-weight: bold;
+}
+
+.latest-work img {
+    width: 600px;
+    object-fit: cover;
+}
+
+.latest-work .image {
+    margin-left: 50px;
+}
+
+/*Footer*/
+footer {
+    background-color: cornflowerblue;
+    display: block;
+    text-align: center;
+}
+
+/*Responsive*/
+@media (max-width: 800px) {
+
+    .hero .image {
+        width: 800px;
+        object-fit: cover;
+    }
+
+    .container-hero .text {
+        left: 25px;
+    }
+
+    .latest-work img {
+        width: 480px;
+    }
+}
+
+@media (max-width: 600px) {
+    .latest-work img {
+        width: 360px;
+    }
+}
